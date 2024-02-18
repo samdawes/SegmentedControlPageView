@@ -41,3 +41,8 @@ dependencies: [
 ### Manually
 
 If you prefer not to use Swift Package Manager, you can integrate manually. Put the `Sources/SegmentedControlPageView` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
+
+## Apps Using
+- [LineTime for Disneyland](https://apps.apple.com/us/app/linetime-for-disneyland/id1462481042)
+- [LineTime for Disney World](https://apps.apple.com/us/app/linetime-for-disney-world/id1530744555)
+If your app uses `SegmentedControlPageView`, don't hesitate to add yours to the list!
