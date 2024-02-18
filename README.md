@@ -24,3 +24,20 @@ SegmentedControlPageView(
 ## Requirements
 - iOS 13.0 or later
 - visionOS 1.0 or later
+
+## Installation
+### Swift Package Manager
+In Xcode go to Project -> Your Project Name -> `Package Dependencies` -> Tap _Plus_. Insert url:
+```
+https://github.com/samdawes/SegmentedControlPageView
+```
+or adding it to the `dependencies` of your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/samdawes/SegmentedControlPageView", .upToNextMajor(from: "1.0.0"))
+]
+```
+### Manually
+
+If you prefer not to use Swift Package Manager, you can integrate manually. Put the `Sources/SegmentedControlPageView` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
