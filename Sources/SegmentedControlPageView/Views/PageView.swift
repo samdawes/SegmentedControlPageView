@@ -1,11 +1,11 @@
 import SwiftUI
 
 @available(iOS 13.0, visionOS 1.0, *)
-struct PageView<Page: View>: View {
+public struct PageView<Page: View>: View {
     private var pages: [Page]
     @Binding private var selection: Int
     
-    init(
+    public init(
         _ pages: [Page],
         selection: Binding<Int>
     ) {
@@ -13,7 +13,7 @@ struct PageView<Page: View>: View {
         self._selection = selection
     }
     
-    var body: some View {
+    public var body: some View {
         if #available(iOS 14, visionOS 1.0, *) {
             TabView(selection: $selection) {
                 ForEach(0..<pages.count, id:\.self) { index in
