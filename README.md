@@ -1,5 +1,7 @@
 # SegmentedControlPageView
 **Offers a seamless integration of a segmented control and a page view in native SwiftUI applications**. Users can navigate between pages by swiping or tapping on segments in the control. Compatible with iOS 13+ and visionOS 1+. 
+![2024-02-18 18 34 46](https://github.com/samdawes/SegmentedControlPageView/assets/12502222/23e2b34f-e332-44e8-a47f-c463710e21db)
+![2024-02-18 18 54 14](https://github.com/samdawes/SegmentedControlPageView/assets/12502222/bcf97d3e-2563-4bcc-906c-fa4a2f54e264)
 
 ## Usage
 The following example shows a possible onboarding process. The segmented control has three segments with the labels `Welcome`, `Features`, and `Next Steps` that correspond to three custom SwiftUI views: `WelcomeView()`, `FeaturesView()`, and `NextStepsView()`.
@@ -31,7 +33,7 @@ In Xcode go to Project -> Your Project Name -> `Package Dependencies` -> Tap _Pl
 ```
 https://github.com/samdawes/SegmentedControlPageView
 ```
-or adding it to the `dependencies` of your `Package.swift`:
+or add it to the `dependencies` section in your `Package.swift` file:
 
 ```swift
 dependencies: [
