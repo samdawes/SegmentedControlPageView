@@ -8,8 +8,11 @@ The following example shows a possible onboarding process. The segmented control
 ```swift
 import SegmentedControlPageView
 
+@State var currentSelection: Int = 0
+
 SegmentedControlPageView(
-  "Onboarding Process"
+  "Onboarding Process",
+  selection: $currentSelection,
   labels: [
     "Welcome",
     "Features",
@@ -21,6 +24,14 @@ SegmentedControlPageView(
     NextStepsView()
   ]
 )
+```
+If you'd like to use the page view without the segmented control, initialize a `PageView` in your project. This will fall back to a UIKit implementation for older versions of iOS, to ensure consistency on all versions.
+```swift
+PageView([
+  WelcomeView(),
+  FeaturesView(),
+  NextStepsView()
+], selection: $currentSelection)
 ```
 
 ## Requirements
